@@ -1,0 +1,48 @@
+main{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows:auto auto auto auto auto auto;
+    background-color: map-get($map: $paleta, $key:'nueve' );
+}
+
+.h1{
+    font-size: 4rem;
+    font-family: $titlefont;
+    color: map-get($map: $paleta, $key:'ocho' );
+}
+
+#h3{
+    font-size: 1.3rem;
+    color:map-get($map: $paleta, $key:'cinco' );
+    text-decoration: underline;
+}
+
+.divH1{
+     text-align: center;
+     grid-column: 2 / 5;
+     margin-top: 5px;
+}
+.divH2{
+    text-align: center;
+    grid-column: 1 / 4;
+    margin-left: 20px;
+    font-family: $mainfont;
+    color: map-get($map: $paleta, $key:'diez' );
+}
+.divH3{
+    grid-column: 4 / 6;
+    grid-row: 2;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: map-get($map: $paleta, $key:'seis' );
+}
+.divH4{
+    grid-column: 4 / 6;
+    margin-left: 10px;
+    margin-top: 170px;
+}
+.divH5{
+    grid-column: 4 / 6;
+    margin-left: 10px;
+}
