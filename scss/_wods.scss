@@ -9,7 +9,6 @@ main{
     font-size: 1.3rem;
 }
 #wod{
-    font-size: 3rem;
     font-family: $titlefont;
     color: map-get($map: $paleta, $key:'dos' );
 }

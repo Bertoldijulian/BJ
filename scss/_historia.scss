@@ -5,12 +5,6 @@ main{
     background-color: map-get($map: $paleta, $key:'nueve' );
 }
 
-.h1{
-    font-size: 4rem;
-    font-family: $titlefont;
-    color: map-get($map: $paleta, $key:'ocho' );
-}
-
 #h3{
     font-size: 1.3rem;
     color:map-get($map: $paleta, $key:'cinco' );
@@ -26,6 +20,7 @@ main{
     text-align: center;
     grid-column: 1 / 4;
     margin-left: 20px;
+    margin-top: 40px;
     font-family: $mainfont;
     color: map-get($map: $paleta, $key:'diez' );
 }
@@ -39,8 +34,9 @@ main{
 }
 .divH4{
     grid-column: 4 / 6;
-    margin-left: 10px;
-    margin-top: 170px;
+    margin-left: 60px;
+    margin-top: 150px;
+    padding-left: 10px;
 }
 .divH5{
     grid-column: 4 / 6;

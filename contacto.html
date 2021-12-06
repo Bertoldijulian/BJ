@@ -44,60 +44,65 @@
         </nav>
         <main>
             <div class="divH1">
-                <h1 class="h1">Contactanos</h1>
-                <p>Para resolver cualquier duda que tengas, llená este formulario o escribinos por nuestras redes sociales. Nosotros nos ponemos en contacto a la brevedad.</p>
+                <h1 id="wod">Contactanos</h1>
             </div>
-            <div class="divCo">
-                <form action="archivo.php" method="post">
-                    <fieldset> 
-                        <legend class="legend  border border-1">Datos personales</legend>
-                        <label for="apellido">Apellido </label>
-                        <input type="text" id="apellido" name="apellido">  <br>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre"> <br>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="example@gmail.com"> <br>
-                        <label for="telefono">Celular</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="+543424457831"> <br>
-                        <label for="edad">Fecha de nacimineto</label>
-                        <input type="date" id="edad" name="edad"><br>
-                        <p>Sexo</p>   
-                        <label for="sexomasculino">Masculino</label>
-                        <input type="radio" id="sexomasculino" value="masculino" name="sexo">
-                        <label for="sexofemenino">Femenino</label>
-                        <input type="radio" id="sexofemenino" value="femenino" name="sexo">
-                    </fieldset>
-                    <fieldset class="fieldset">
-                        <legend class="legend border border-1 mt-2">Datos adicionales</legend>
-                        <label for="peso">Peso</label> 
-                        <select name="peso" id="peso">
-                            <option value="40-50 kg">40-50 kg</option>
-                            <option value="50-60 kg">50-60 kg</option>
-                            <option value="60-70 kg">60-70 kg</option>
-                            <option value="70-80 kg">70-80 kg</option>
-                            <option value="80-90 kg">80-90 kg</option>
-                            <option value="+90 kg">+90 kg</option> 
-                        </select>
-                        <p>¿Realizas alguna actividad física o deporte?</p>
-                        <label for="si">Si</label>
-                        <input type="radio" id="si" value="si" name="pregunta">
-                        <label for="no">No</label>
-                        <input type="radio" id="no" value="no" name="pregunta">
-                        <label for="text"> ¿Cuál/es?</label> 
-                        <input type="text" id="text" name="respuesta">
-                    </fieldset>
+            <div class="divCo mt-4">
+                <form action="./ingresar.html" method="post">
+                    <div>
+                        <fieldset class="d-flex flex-column"> 
+                            <legend class="legend  border border-1">Datos personales</legend>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido"> 
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre"> 
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com"> 
+                            <label for="telefono">Celular</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+543424457831"> 
+                            <label for="edad">Fecha de nacimineto</label>
+                            <input type="date" id="edad" name="edad">
+                            <div>
+                                <p>Sexo</p>   
+                                <label for="sexomasculino">Masculino</label>
+                                <input type="radio" id="sexomasculino" value="masculino" name="sexo">
+                                <label for="sexofemenino">Femenino</label>
+                                <input type="radio" id="sexofemenino" value="femenino" name="sexo">
+                            </div>
+                        </fieldset>
+                        <fieldset class="fieldset">
+                            <legend class="legend border border-1 mt-2">Datos adicionales</legend>
+                            <label for="peso">Peso</label> 
+                            <select name="peso" id="peso">
+                                <option value="40-50 kg">40-50 kg</option>
+                                <option value="50-60 kg">50-60 kg</option>
+                                <option value="60-70 kg">60-70 kg</option>
+                                <option value="70-80 kg">70-80 kg</option>
+                                <option value="80-90 kg">80-90 kg</option>
+                                <option value="+90 kg">+90 kg</option> 
+                            </select>
+                            <p>¿Realizas alguna actividad física o deporte?</p>
+                            <label for="si">Si</label>
+                            <input type="radio" id="si" value="si" name="pregunta">
+                            <label for="no">No</label>
+                            <input type="radio" id="no" value="no" name="pregunta">
+                            <label for="text"> ¿Cuál/es?</label> 
+                            <input type="text" id="text" name="respuesta">
+                        </fieldset>
+                    </div>
+                    <div id="divCo1">
+                        <label for="comentario" class="legend mb-2 d-flex justify-content-center">Dejanos un comentario</label>
+                        <textarea name="comentario" id="comentario" cols="60" rows="8"></textarea>
+                        <div>
+                            <label for="accept" class="d-flex flex-column">Quiero recibir promociones</label>
+                            <input type="checkbox" id="accept" name="accept" value="si">
+                        </div>
+                        <input type="reset" value="Cancelar">
+                        <input type="submit" value="Enviar"/>
+                    </div>
                 </form>
             </div>
-            <div class="divCo1">
-                <label for="comentario" class="legend mb-2">Dejanos un comentario</label> <br>
-                <textarea name="comentario" id="comentario" cols="60" rows="8"></textarea> <br>
-                <label for="accept">Quiero recibir promociones</label>
-                <input type="checkbox" id="accept" name="accept" value="si"> <br>
-                <input type="reset" value="Cancelar">
-                <input type="submit" value="Enviar">
-            </div>
             <div class="divCo2">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.1171275852003!2d-60.70449340887881!3d-31.630643283813107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9c6a09efc33%3A0x8dd353b3b410a74!2sWarriors%20Centro%20de%20Entrenamiento!5e0!3m2!1ses-419!2sar!4v1634344051480!5m2!1ses-419!2sar" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.1171275852003!2d-60.70449340887881!3d-31.630643283813107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9c6a09efc33%3A0x8dd353b3b410a74!2sWarriors%20Centro%20de%20Entrenamiento!5e0!3m2!1ses-419!2sar!4v1634344051480!5m2!1ses-419!2sar" width="100%" height="1000px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </main>
         
