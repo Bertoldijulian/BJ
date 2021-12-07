@@ -56,7 +56,7 @@ main {
   grid-column: 2 / 5; }
 
 #divI1 {
-  background-image: url(../imagenes/imagen-heroe1.jpg);
+  background-image: url(../media/imagenes/imagen-heroe1.jpg);
   width: 100%;
   grid-column: 1 / 8;
   height: 625px;
