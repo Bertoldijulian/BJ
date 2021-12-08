@@ -8,42 +8,41 @@ main{
 #h1{
     font-size: 7rem;
     font-family: $spartanfont;
-    color: map-get($map: $paleta, $key:'dos' );
+    color: map-get($map: $paleta, $key:'nueve' );
+    padding-right: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 .divI1{
-    text-align: center;
     grid-column: 2 / 5;
 }
 
 #divI1{
-    background-image:url(../media/imagenes/imagen-heroe1.jpg);
+    background-image:url(../media/imagenes/heroe.jpg);
     width: 100%;
     grid-column: 1 / 8;
-    height: 625px;
+    height: 800px;
     background-repeat: no-repeat;
     margin-bottom: 20px;
 }
 
 h2, h3{
     text-align: center;
-    font-size: 2rem;
-    font-family:'Spartan', sans-serif;
+    font-family: $titlefont;
     margin-top: 20px;
     margin-bottom: 20px;
-    color:map-get($map: $paleta, $key:'ocho' );
+    color:map-get($map: $paleta, $key:'diez' );
 }
 
 .divI2{
-    text-align: center;
-    grid-column: 2 / 5;
+    grid-column: 1 / 7;
 }
 
 .divI3{
-    text-align: center;
     font-family: $mainfont;
-    grid-column: 2 / 5;
-    color: map-get($map: $paleta, $key:'diez');
+    grid-column: 1 / 7;
+    padding: 30px;
 }
 
 .divI4{

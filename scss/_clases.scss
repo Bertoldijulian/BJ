@@ -13,7 +13,7 @@ main{
 }
 
 .th{
-    color: map-get($map: $paleta, $key:'doce' );
+    color: map-get($map: $paleta, $key:'ocho' );
 }
 .td{
     color: map-get($map: $paleta, $key:'once' );
