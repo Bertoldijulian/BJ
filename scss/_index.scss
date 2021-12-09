@@ -37,12 +37,18 @@ h2, h3{
 
 .divI2{
     grid-column: 1 / 7;
+    border-top: 2px solid rgb(155, 155, 155);
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .divI3{
     font-family: $mainfont;
     grid-column: 1 / 7;
     padding: 30px;
+    border-bottom: 2px solid rgb(155, 155, 155);
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .divI4{
