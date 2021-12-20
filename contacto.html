@@ -87,12 +87,12 @@
                             <label for="no">No</label>
                             <input type="radio" id="no" value="no" name="pregunta">
                             <label for="text"> ¿Cuál/es?</label> 
-                            <input type="text" id="text" name="respuesta">
+                            <input type="text" id="text" name="respuesta" class="Intext">
                         </fieldset>
                     </div>
                     <div id="divCo1">
                         <label for="comentario" class="legend mb-2 d-flex justify-content-center">Dejanos un comentario</label>
-                        <textarea name="comentario" id="comentario" cols="60" rows="8"></textarea>
+                        <textarea name="comentario" id="comentario" class="coment" ></textarea>
                         <div>
                             <label for="accept" class="d-flex flex-column">Quiero recibir promociones</label>
                             <input type="checkbox" id="accept" name="accept" value="si">
@@ -103,20 +103,20 @@
                 </form>
             </div>
             <div class="divCo2">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.1171275852003!2d-60.70449340887881!3d-31.630643283813107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9c6a09efc33%3A0x8dd353b3b410a74!2sWarriors%20Centro%20de%20Entrenamiento!5e0!3m2!1ses-419!2sar!4v1634344051480!5m2!1ses-419!2sar" width="100%" height="1000px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.1171275852003!2d-60.70449340887881!3d-31.630643283813107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9c6a09efc33%3A0x8dd353b3b410a74!2sWarriors%20Centro%20de%20Entrenamiento!5e0!3m2!1ses-419!2sar!4v1634344051480!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </main>
         
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-2 border-top">
-                <ul class="nav justify-content-start pb-2 mb-2">
+                <ul class="nav justify-content-start pb-2 mb-2 pt-3">
                     <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Home</a></li>
                     <li class="nav-item"><a href="./historia.html" class="nav-link px-2 text-muted">Historia</a></li>
                     <li class="nav-item"><a href="./clases.html" class="nav-link px-2 text-muted">Clases</a></li>
                     <li class="nav-item"><a href="./wods.html" class="nav-link px-2 text-muted">Wods</a></li>
                     <li class="nav-item"><a href="./contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
                 </ul>
-                <ul class="nav col-md-2 justify-content-center list-unstyled d-flex">
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                     <li class="ms-3">
                         <a href="https://www.youtube.com/" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-youtube" viewBox="0 0 16 16">

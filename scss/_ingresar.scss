@@ -6,9 +6,10 @@ main{
 }
 
 .divI{
-    grid-column: 1 / 7;
-    background-image: url(../imagenes/error.jpg);
-    height: 722px;
+    grid-column: 1 / 8;
+    background-image: url(../media/imagenes/error404.jpg);
+    height: 950px;
+    background-repeat: no-repeat;
 }
 
 main button{

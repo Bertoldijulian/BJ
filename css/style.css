@@ -3,8 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@600&display=swap");
 * {
   padding: 0;
-  margin: 0;
-  font-size: 1.1rem; }
+  margin: 0; }
+  @media only screen and (min-width: 601px) and (max-width: 1920px) {
+    * {
+      font-size: 1.1rem; } }
+  @media only screen and (min-width: 451px) and (max-width: 600px) {
+    * {
+      font-size: 1em; } }
+  @media only screen and (max-width: 450px) {
+    * {
+      font-size: 12px; } }
 
 #nav a img {
   width: 80px;
@@ -52,18 +60,56 @@ main {
   color: rgba(0, 0, 0, 0.87);
   padding-right: 30px;
   margin-right: 20px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  text-align: end; }
+  @media only screen and (min-width: 1251px) {
+    #h1 {
+      font-size: 7.5rem; } }
+  @media only screen and (min-width: 501px) and (max-width: 1250px) {
+    #h1 {
+      font-size: 6.5rem; } }
+  @media only screen and (min-width: 351px) and (max-width: 500px) {
+    #h1 {
+      font-size: 5rem; } }
+  @media only screen and (max-width: 350px) {
+    #h1 {
+      font-size: 4rem; } }
 
 .divI1 {
   grid-column: 2 / 5; }
 
-#divI1 {
-  background-image: url(../media/imagenes/heroe.jpg);
-  width: 100%;
-  grid-column: 1 / 8;
-  height: 800px;
-  background-repeat: no-repeat;
-  margin-bottom: 20px; }
+@media only screen and (min-width: 1025px) {
+  #divI1 {
+    background-image: url(../media/imagenes/heroe1.webp);
+    width: 100%;
+    grid-column: 1 / 8;
+    height: 850px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 20px; } }
+
+@media only screen and (max-width: 1024px) {
+  #divI1 {
+    background-image: url(../media/imagenes/heroe3.jpg);
+    width: 100%;
+    grid-column: 1 / 8;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 20px; } }
+
+@media only screen and (max-width: 350px) {
+  #divI1 {
+    background-image: url(../media/imagenes/heroe3.jpg);
+    width: 100%;
+    grid-column: 1 / 8;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 20px; } }
 
 h2, .h2, h3, .h3 {
   text-align: center;
@@ -106,20 +152,38 @@ main {
   grid-column: 2 / 5;
   margin-top: 5px; }
 
-.divH2 {
-  grid-column: 1 / 4;
-  margin-left: 20px;
-  margin-top: 40px;
-  font-family: "Outfit", sans-serif; }
+@media only screen and (min-width: 821px) and (max-width: 1920px) {
+  .divH2 {
+    grid-column: 1 / 4;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-family: "Outfit", sans-serif; } }
 
-.divH3 {
-  grid-column: 4 / 6;
-  grid-row: 2;
-  margin-left: 10px;
-  margin-top: 20px;
-  padding-top: 20px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.685); }
+@media only screen and (max-width: 820px) {
+  .divH2 {
+    grid-column: 1 / 7;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    font-family: "Outfit", sans-serif; } }
+
+@media only screen and (min-width: 821px) and (max-width: 1920px) {
+  .divH3 {
+    grid-column: 4 / 6;
+    grid-row: 2;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.685); } }
+
+@media only screen and (max-width: 820px) {
+  .divH3 {
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.685);
+    grid-column: 2 / 5; } }
 
 .divH4 {
   grid-column: 1 / 7;
@@ -160,8 +224,13 @@ main {
 
 #wod {
   font-family: "Martel", serif;
-  color: white;
-  font-size: 3rem; }
+  color: white; }
+  @media only screen and (max-width: 315px) {
+    #wod {
+      font-size: 2rem; } }
+  @media only screen and (min-width: 316px) {
+    #wod {
+      font-size: 3rem; } }
 
 .divW {
   grid-column-start: 1;
@@ -171,31 +240,54 @@ main {
   margin-left: 10px;
   margin-right: 10px; }
 
-.divW1 {
-  margin-top: 5px;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  font-family: "Outfit", sans-serif;
-  padding: 1rem 20px 5px 20px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #9b9b9b;
-  border-top: 2px solid #9b9b9b; }
+@media only screen and (max-width: 860px) {
+  .divW1 {
+    margin-top: 5px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    font-family: "Outfit", sans-serif;
+    padding: 1rem 20px 5px 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #9b9b9b;
+    border-top: 2px solid #9b9b9b; } }
+
+@media only screen and (min-width: 861px) and (max-width: 1920px) {
+  .divW1 {
+    margin-top: 5px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: "Outfit", sans-serif;
+    padding: 1rem 20px 5px 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #9b9b9b;
+    border-top: 2px solid #9b9b9b; } }
 
 div p {
   color: rgba(255, 255, 255, 0.877); }
 
-.divW2 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  font-family: "Outfit", sans-serif;
-  margin-right: 30px;
-  padding: 1rem 20px 5px 20px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #9b9b9b;
-  border-top: 2px solid #9b9b9b; }
+@media only screen and (max-width: 860px) {
+  .divW2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    margin-top: 5px;
+    font-family: "Outfit", sans-serif;
+    padding: 1rem 20px 5px 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #9b9b9b;
+    border-top: 2px solid #9b9b9b; } }
+
+@media only screen and (min-width: 861px) and (max-width: 1920px) {
+  .divW2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    margin-top: 5px;
+    margin-right: 30px;
+    font-family: "Outfit", sans-serif;
+    padding: 1rem 20px 5px 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #9b9b9b;
+    border-top: 2px solid #9b9b9b; } }
 
 main {
   display: grid;
@@ -203,14 +295,25 @@ main {
   grid-template-rows: auto auto auto auto auto auto;
   background-color: rgba(0, 0, 0, 0.87); }
 
-.divCo {
-  text-align: center;
-  grid-column: 1 / 4;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Outfit", sans-serif; }
-  .divCo fieldset label {
-    color: rgba(255, 255, 255, 0.705); }
+@media only screen and (min-width: 1080px) and (max-width: 1920px) {
+  .divCo {
+    text-align: center;
+    grid-column: 1 / 4;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Outfit", sans-serif; }
+    .divCo fieldset label {
+      color: rgba(255, 255, 255, 0.705); } }
+
+@media only screen and (max-width: 1079px) {
+  .divCo {
+    text-align: center;
+    grid-column: 2 / 5;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Outfit", sans-serif; }
+    .divCo fieldset label {
+      color: rgba(255, 255, 255, 0.705); } }
 
 #divCo1 {
   text-align: center;
@@ -218,12 +321,55 @@ main {
   margin-bottom: 20px;
   font-family: "Outfit", sans-serif; }
 
-.divCo2 {
-  text-align: center;
-  grid-column: 4 / 7;
-  margin-bottom: 10px;
-  margin-top: 30px;
-  padding-right: 15px; }
+@media only screen and (min-width: 1080px) and (max-width: 1920px) {
+  .divCo2 {
+    grid-column: 4 / 7;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding-right: 15px; } }
+
+@media only screen and (max-width: 1079px) {
+  .divCo2 {
+    grid-column: 1 / 7;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px; } }
+
+@media only screen and (max-width: 1079px) {
+  #map {
+    width: 100%;
+    height: 400px; } }
+
+@media only screen and (min-width: 1080px) and (max-width: 1920px) {
+  #map {
+    width: 100%;
+    height: 1000px; } }
+
+@media only screen and (min-width: 1080px) and (max-width: 1920px) {
+  .coment {
+    width: 500px;
+    height: 200px; } }
+
+@media only screen and (min-width: 574px) and (max-width: 1079px) {
+  .coment {
+    width: 300px;
+    height: 250px; } }
+
+@media only screen and (max-width: 573px) {
+  .coment {
+    width: 150px;
+    height: 180px; } }
+
+@media only screen and (max-width: 340px) {
+  .coment {
+    height: 100px;
+    width: 80px; } }
+
+@media only screen and (max-width: 340px) {
+  .Intext {
+    height: 90px;
+    width: 80px; } }
 
 fieldset p {
   color: rgba(255, 255, 255, 0.705); }
@@ -241,9 +387,10 @@ main {
   background-color: rgba(0, 0, 0, 0.87); }
 
 .divI {
-  grid-column: 1 / 7;
-  background-image: url(../imagenes/error.jpg);
-  height: 722px; }
+  grid-column: 1 / 8;
+  background-image: url(../media/imagenes/error404.jpg);
+  height: 950px;
+  background-repeat: no-repeat; }
 
 main button {
   grid-row: 1;
